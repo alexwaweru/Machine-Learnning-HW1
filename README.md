@@ -21,7 +21,7 @@ where a is a parameter governing the prior distribution and Z is a normalization
 6. By looking at the MAP estimate derived in the previous point, can you provide an interpretation of parameter a in terms of training examples?
 7. Implement the posterior by coding the file q3 posterior.py, and plot the posterior for the same coin flipping results considered above (i.e., {m = 1, H = 1}, {m = 100, H = 100}, and {m = 100, H = 80}), by running the script q3g.py. Do not include the evidence term (i.e., the denominator) in the posterior calculation. There is no way to estimate the evidence and in any case it is just a constant. Make sure to plot the posterior, not the log posterior.
 
-##Problem Four
+## **Problem Four**
 Write Python code implementing a regression algorithm for multi-dimensional inputs x and 1D outputs y. Your software must learn the regression hypothesis by minimizing the regularized least-square objective where θ = [θ 0 , θ 1 , ..., θ d ] ⊤ and b(x) is a vector that encodes either of the following two distinct choices of features:
   - b l (x) = [1, x 1 , ..., x d ] ⊤ (where, d is the number of input entries in vector x and x j denotes the j-th element of vector x), or
   - b q (x) = [1, x 1 , ..., x d , x 21 , x 1 x 2 , ..., x 1 x d , x 22 , x 2 x 3 , ..., x 2 x d , ...., x 2 d ] ⊤ (i.e., a quadratic function of the elements of x).
